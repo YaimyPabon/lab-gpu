@@ -1,0 +1,51 @@
+Ejecutando con 5000000 elementos
+Time taken by reduction operation using a function: 2.61 ms ± 11.1 µs per loop (mean ± std. dev. of 2 runs, 100 loops each)
+And the result of the sum of numbers in the range [0, value) is: 24970.76122879585
+
+Time taken by reduction operation using numpy.sum(): 7.7 µs ± 0.53 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Now, the result using numpy.sum(): 24970.761228796026 
+ 
+Time taken by reduction operation using numpy.ndarray.sum(): 6.94 µs ± 4.63 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Now, the result using numpy.ndarray.sum(): 24970.761228796026
+Time taken by reduction operation using cupy.sum(): 25.8 µs ± 15.5 µs per loop (mean ± std. dev. of 2 runs, 1 loop each)
+Result of the sum using cupy.sum(): 24996.494543374458 
+
+Time taken by reduction operation using cupy.ndarray.sum(): 6.04 µs ± 4.54 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Result of the sum using cupy.ndarray.sum(): 24996.494543374458
+Result of reduction using Numba (GPU): 24911.578116681303
+
+Time taken by reduction operation using Numba (GPU): 81.8 µs ± 8.71 ns per loop (mean ± std. dev. of 2 runs, 10,000 loops each)
+Ejecutando con 50000000 elementos
+Time taken by reduction operation using a function: 2.62 ms ± 722 ns per loop (mean ± std. dev. of 2 runs, 100 loops each)
+And the result of the sum of numbers in the range [0, value) is: 25078.57857486828
+
+Time taken by reduction operation using numpy.sum(): 7.91 µs ± 0.695 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Now, the result using numpy.sum(): 25078.57857486829 
+ 
+Time taken by reduction operation using numpy.ndarray.sum(): 7.14 µs ± 11 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Now, the result using numpy.ndarray.sum(): 25078.57857486829
+Time taken by reduction operation using cupy.sum(): 6.2 µs ± 1.07 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Result of the sum using cupy.sum(): 24943.07510200829 
+
+Time taken by reduction operation using cupy.ndarray.sum(): 6.01 µs ± 1.72 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Result of the sum using cupy.ndarray.sum(): 24943.07510200829
+Result of reduction using Numba (GPU): 25060.09478794771
+
+Time taken by reduction operation using Numba (GPU): 82.5 µs ± 0.826 ns per loop (mean ± std. dev. of 2 runs, 10,000 loops each)
+Ejecutando con 500000000 elementos
+Time taken by reduction operation using a function: 2.62 ms ± 1.08 µs per loop (mean ± std. dev. of 2 runs, 100 loops each)
+And the result of the sum of numbers in the range [0, value) is: 25020.25675150178
+
+Time taken by reduction operation using numpy.sum(): 7.76 µs ± 0.0628 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Now, the result using numpy.sum(): 25020.25675150158 
+ 
+Time taken by reduction operation using numpy.ndarray.sum(): 6.97 µs ± 1.3 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Now, the result using numpy.ndarray.sum(): 25020.25675150158
+Time taken by reduction operation using cupy.sum(): 6.17 µs ± 1.92 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Result of the sum using cupy.sum(): 25077.323703846654 
+
+Time taken by reduction operation using cupy.ndarray.sum(): 5.94 µs ± 0.357 ns per loop (mean ± std. dev. of 2 runs, 100,000 loops each)
+Result of the sum using cupy.ndarray.sum(): 25077.323703846654
+Result of reduction using Numba (GPU): 25123.77668474764
+
+Time taken by reduction operation using Numba (GPU): 82.5 µs ± 0.262 ns per loop (mean ± std. dev. of 2 runs, 10,000 loops each)
