@@ -1,0 +1,38 @@
+Time taken by reduction operation using a function: 46.2 ms ± 88 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+And the result of the sum of numbers in the range [0, value) is: 24950.685616279792
+
+Time taken by reduction operation using numpy.sum(): 104 µs ± 400 ns per loop (mean ± std. dev. of 2 runs, 10,000 loops each)
+Now, the result using numpy.sum(): 24950.685616279643 
+ 
+Time taken by reduction operation using numpy.ndarray.sum(): 75 µs ± 17.8 ns per loop (mean ± std. dev. of 2 runs, 10,000 loops each)
+Now, the result using numpy.ndarray.sum(): 24950.685616279643
+Tamaño del array: 5000000
+
+Suma secuencial usando reduc_operation
+Resultado: 2499520.8855190203
+Tiempo: 4.640532 segundos
+
+Paralelismo usando 1 procesos
+Resultado con 1 procesos: 2499520.8855190203
+Tiempo con 1 procesos: 4.780688 segundos
+
+Paralelismo usando 2 procesos
+Resultado con 2 procesos: 2499520.8855191553
+Tiempo con 2 procesos: 2.619068 segundos
+
+Paralelismo usando 4 procesos
+Resultado con 4 procesos: 2499520.8855191246
+Tiempo con 4 procesos: 1.395307 segundos
+
+Suma secuencial usando la función original
+Time taken by reduction operation using a function: 4.5 s ± 11.9 ms per loop (mean ± std. dev. of 2 runs, 1 loop each)
+And the result of the sum of numbers in the range [0, value) is: 2500515.0086682923
+
+Suma usando la versión optimizada con @njit
+Time taken by reduction operation using @njit: 20.8 ms ± 16.5 µs per loop (mean ± std. dev. of 2 runs, 1 loop each)
+And the result using @njit is: 2500515.0086682923
+
+Suma usando la versión optimizada con @njit(parallel=True)
+Time taken by reduction operation using @njit(parallel=True): 9.75 ms ± 3.76 ms per loop (mean ± std. dev. of 2 runs, 1 loop each)
+And the result using @njit(parallel=True) is: 2500515.008668029
+
